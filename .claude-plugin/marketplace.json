@@ -27,7 +27,7 @@
     {
       "name": "a11y",
       "description": "Accessibility Testing plugin assembled from skills_registry with 2 skills and 1 agents.",
-      "version": "0.1.0",
+      "version": "0.1.15028",
       "source": "./plugins/a11y",
       "author": {
         "name": "QE Practice VS"
@@ -43,7 +43,7 @@
     {
       "name": "aqa",
       "description": "AQA Automation plugin assembled from skills_registry with 2 skills and 1 agents.",
-      "version": "0.1.0",
+      "version": "0.1.952637",
       "source": "./plugins/aqa",
       "author": {
         "name": "QE Practice VS"
@@ -59,7 +59,7 @@
     {
       "name": "common",
       "description": "Common QE plugin assembled from skills_registry with 3 skills and 1 agents.",
-      "version": "0.1.0",
+      "version": "0.1.223991",
       "source": "./plugins/common",
       "author": {
         "name": "QE Practice VS"
@@ -75,7 +75,7 @@
     {
       "name": "domain",
       "description": "Domain Testing plugin assembled from skills_registry with 2 skills and 1 agents.",
-      "version": "0.1.0",
+      "version": "0.1.860123",
       "source": "./plugins/domain",
       "author": {
         "name": "QE Practice VS"
@@ -91,7 +91,7 @@
     {
       "name": "perf",
       "description": "Performance Testing plugin assembled from skills_registry with 3 skills and 1 agents.",
-      "version": "0.1.0",
+      "version": "0.1.163666",
       "source": "./plugins/perf",
       "author": {
         "name": "QE Practice VS"
@@ -107,7 +107,7 @@
     {
       "name": "qa",
       "description": "Functional QA plugin assembled from skills_registry with 2 skills and 1 agents.",
-      "version": "0.1.0",
+      "version": "0.1.679677",
       "source": "./plugins/qa",
       "author": {
         "name": "QE Practice VS"
@@ -123,7 +123,7 @@
     {
       "name": "security",
       "description": "Security Testing plugin assembled from skills_registry with 2 skills and 1 agents.",
-      "version": "0.1.0",
+      "version": "0.1.248727",
       "source": "./plugins/security",
       "author": {
         "name": "QE Practice VS"

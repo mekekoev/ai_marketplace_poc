@@ -11,6 +11,7 @@ This is intentionally small PoC automation:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import shutil
@@ -106,7 +107,23 @@ def write_json(path: Path, payload: dict) -> None:
     path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
 
-def build_plugin_manifest(discipline: str, skills: list[str], agents: list[str]) -> dict:
+def content_version(plugin_root: Path) -> str:
+    digest = hashlib.sha256()
+    for path in sorted(plugin_root.rglob("*")):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(plugin_root).as_posix()
+        if relative.startswith(".codex-plugin/") or relative.startswith(".claude-plugin/"):
+            continue
+        digest.update(relative.encode("utf-8"))
+        digest.update(b"\0")
+        digest.update(path.read_bytes())
+        digest.update(b"\0")
+    patch = int.from_bytes(digest.digest()[:4], "big") % 1_000_000
+    return f"0.1.{patch}"
+
+
+def build_plugin_manifest(discipline: str, skills: list[str], agents: list[str], version: str) -> dict:
     label = title_from_name(discipline)
     description = plugin_description(discipline, len(skills), len(agents))
     prompts = [f"Use {label} to help with a {discipline} task."]
@@ -114,7 +131,7 @@ def build_plugin_manifest(discipline: str, skills: list[str], agents: list[str])
         prompts.append(f"Use ${skills[0]} from {label}.")
     return {
         "name": discipline,
-        "version": "0.1.0",
+        "version": version,
         "description": description,
         "author": {"name": "QE Practice VS"},
         "license": "MIT",
@@ -163,7 +180,12 @@ def update_codex_marketplace(output: Path, generated_names: list[str]) -> None:
     write_json(path, payload)
 
 
-def update_claude_marketplace(output: Path, generated_names: list[str], descriptions: dict[str, str]) -> None:
+def update_claude_marketplace(
+    output: Path,
+    generated_names: list[str],
+    descriptions: dict[str, str],
+    versions: dict[str, str],
+) -> None:
     path = output / ".claude-plugin" / "marketplace.json"
     payload = load_json_object(
         path,
@@ -181,7 +203,7 @@ def update_claude_marketplace(output: Path, generated_names: list[str], descript
             {
                 "name": name,
                 "description": descriptions[name],
-                "version": "0.1.0",
+                "version": versions[name],
                 "source": f"./plugins/{name}",
                 "author": {"name": "QE Practice VS"},
                 "license": "MIT",
@@ -196,6 +218,7 @@ def update_claude_marketplace(output: Path, generated_names: list[str], descript
 def assemble(registry: Path, output: Path) -> None:
     generated_names: list[str] = []
     descriptions: dict[str, str] = {}
+    versions: dict[str, str] = {}
 
     for discipline in discover_disciplines(registry):
         plugin_root = output / "plugins" / discipline
@@ -208,13 +231,15 @@ def assemble(registry: Path, output: Path) -> None:
         if not skills and not agents:
             continue
 
-        manifest = build_plugin_manifest(discipline, skills, agents)
+        version = content_version(plugin_root)
+        manifest = build_plugin_manifest(discipline, skills, agents, version)
         write_json(plugin_root / ".codex-plugin" / "plugin.json", manifest)
         generated_names.append(discipline)
         descriptions[discipline] = manifest["description"]
+        versions[discipline] = version
 
     update_codex_marketplace(output, generated_names)
-    update_claude_marketplace(output, generated_names, descriptions)
+    update_claude_marketplace(output, generated_names, descriptions, versions)
     print(f"Assembled {len(generated_names)} plugins: {', '.join(generated_names)}")
 
 
