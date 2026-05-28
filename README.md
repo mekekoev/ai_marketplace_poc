@@ -8,6 +8,8 @@ from.
 
 - Codex marketplace: `.agents/plugins/marketplace.json`
 - Claude Code marketplace: `.claude-plugin/marketplace.json`
+- Extracted skills source: `skills/<discipline>/<skill>`
+- Extracted agents source: `agents/<discipline>/<agent>`
 - Demo plugin: `plugins/starter-tools`
 - Discipline plugins: `plugins/common`, `plugins/qa`, `plugins/aqa`,
   `plugins/perf`, `plugins/security`, `plugins/a11y`, `plugins/domain`
