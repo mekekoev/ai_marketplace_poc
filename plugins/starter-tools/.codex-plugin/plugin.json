@@ -1,0 +1,30 @@
+{
+  "name": "starter-tools",
+  "version": "0.1.0",
+  "description": "Demo skills for implementation planning and code review.",
+  "author": {
+    "name": "Local Developer"
+  },
+  "license": "MIT",
+  "keywords": [
+    "planning",
+    "code-review",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Starter Tools",
+    "shortDescription": "Plan changes and review code.",
+    "longDescription": "Starter Tools is a small demo plugin for a custom AI marketplace. It packages two reusable skills: one for planning implementation work and one for reviewing code changes.",
+    "developerName": "Local Developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Starter Tools to plan an implementation.",
+      "Use Starter Tools to review code changes."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

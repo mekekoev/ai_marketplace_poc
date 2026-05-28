@@ -1,0 +1,14 @@
+{
+  "name": "starter-tools",
+  "description": "Demo skills and agents for implementation planning and code review.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Local Developer"
+  },
+  "license": "MIT",
+  "keywords": [
+    "planning",
+    "code-review",
+    "productivity"
+  ]
+}

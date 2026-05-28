@@ -1,0 +1,28 @@
+{
+  "name": "ai-marketplace",
+  "owner": {
+    "name": "Local Developer"
+  },
+  "metadata": {
+    "description": "A portable marketplace for shared Codex and Claude Code plugins.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "starter-tools",
+      "description": "Demo skills and agents for implementation planning and code review.",
+      "version": "0.1.0",
+      "source": "./plugins/starter-tools",
+      "author": {
+        "name": "Local Developer"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "planning",
+        "code-review",
+        "productivity"
+      ]
+    }
+  ]
+}
