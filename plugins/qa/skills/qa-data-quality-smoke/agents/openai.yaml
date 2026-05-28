@@ -1,0 +1,6 @@
+interface:
+  display_name: "QA Data Quality Smoke"
+  short_description: "Placeholder functional QA skill for marketplace smoke testing."
+  default_prompt: "Use $qa-data-quality-smoke to outline basic data quality smoke checks."
+policy:
+  allow_implicit_invocation: true

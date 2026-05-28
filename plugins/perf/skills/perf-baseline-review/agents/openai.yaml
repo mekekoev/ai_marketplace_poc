@@ -1,0 +1,6 @@
+interface:
+  display_name: "Perf Baseline Review"
+  short_description: "Placeholder performance testing skill for marketplace smoke testing."
+  default_prompt: "Use $perf-baseline-review to summarize a simple performance baseline risk."
+policy:
+  allow_implicit_invocation: true

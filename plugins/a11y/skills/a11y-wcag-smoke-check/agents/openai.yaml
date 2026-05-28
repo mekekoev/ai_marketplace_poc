@@ -1,0 +1,6 @@
+interface:
+  display_name: "A11y WCAG Smoke Check"
+  short_description: "Placeholder accessibility testing skill for marketplace smoke testing."
+  default_prompt: "Use $a11y-wcag-smoke-check to draft a tiny WCAG smoke checklist."
+policy:
+  allow_implicit_invocation: true

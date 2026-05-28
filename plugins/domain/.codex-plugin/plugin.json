@@ -1,0 +1,30 @@
+{
+  "name": "domain",
+  "version": "0.1.0",
+  "description": "Platform-specific domain testing placeholders for SAP and Salesforce marketplace validation.",
+  "author": {
+    "name": "QE Practice VS"
+  },
+  "license": "MIT",
+  "keywords": [
+    "domain",
+    "sap",
+    "salesforce"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Domain Testing",
+    "shortDescription": "Platform-specific smoke skills.",
+    "longDescription": "Platform-specific domain testing placeholders for SAP and Salesforce marketplace validation.",
+    "developerName": "QE Practice VS",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Domain Testing to draft an SAP smoke note.",
+      "Outline a Salesforce flow smoke check."
+    ],
+    "brandColor": "#4D7C0F"
+  }
+}

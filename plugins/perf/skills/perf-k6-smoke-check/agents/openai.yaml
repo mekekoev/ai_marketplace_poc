@@ -1,0 +1,6 @@
+interface:
+  display_name: "Perf K6 Smoke Check"
+  short_description: "Placeholder performance testing skill for marketplace smoke testing."
+  default_prompt: "Use $perf-k6-smoke-check to outline a tiny k6 smoke check."
+policy:
+  allow_implicit_invocation: true

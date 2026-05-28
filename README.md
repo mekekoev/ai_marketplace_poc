@@ -9,6 +9,8 @@ from.
 - Codex marketplace: `.agents/plugins/marketplace.json`
 - Claude Code marketplace: `.claude-plugin/marketplace.json`
 - Demo plugin: `plugins/starter-tools`
+- Discipline plugins: `plugins/common`, `plugins/qa`, `plugins/aqa`,
+  `plugins/perf`, `plugins/security`, `plugins/a11y`, `plugins/domain`
 
 `starter-tools` includes two shared skills:
 
@@ -19,6 +21,9 @@ Claude Code also gets native plugin agents:
 
 - `implementation-planner`
 - `code-reviewer`
+
+The discipline plugins package reference QE skills and placeholder agents for
+marketplace import smoke testing.
 
 Codex gets per-skill `agents/openai.yaml` metadata for the same two experiences.
 

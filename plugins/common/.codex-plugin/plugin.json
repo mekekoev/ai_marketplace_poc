@@ -1,0 +1,30 @@
+{
+  "name": "common",
+  "version": "0.1.0",
+  "description": "Shared common Quality Engineering skills packaged with a marketplace smoke-test agent.",
+  "author": {
+    "name": "QE Practice VS"
+  },
+  "license": "MIT",
+  "keywords": [
+    "common",
+    "qe",
+    "marketplace"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Common QE",
+    "shortDescription": "Shared QE skills and smoke agents.",
+    "longDescription": "Shared common Quality Engineering skills packaged with a marketplace smoke-test agent.",
+    "developerName": "QE Practice VS",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Common QE to smoke test shared QE skills.",
+      "Evaluate an agent with the common tools."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

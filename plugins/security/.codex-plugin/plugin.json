@@ -1,0 +1,30 @@
+{
+  "name": "security",
+  "version": "0.1.0",
+  "description": "Security testing placeholders for OWASP and threat-model marketplace import validation.",
+  "author": {
+    "name": "QE Practice VS"
+  },
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "owasp",
+    "threat-modeling"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Security Testing",
+    "shortDescription": "Security smoke skills.",
+    "longDescription": "Security testing placeholders for OWASP and threat-model marketplace import validation.",
+    "developerName": "QE Practice VS",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Security Testing to draft an OWASP smoke checklist.",
+      "Outline a small threat-model smoke note."
+    ],
+    "brandColor": "#DC2626"
+  }
+}

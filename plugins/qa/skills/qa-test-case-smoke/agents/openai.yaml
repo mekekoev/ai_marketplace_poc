@@ -1,0 +1,6 @@
+interface:
+  display_name: "QA Test Case Smoke"
+  short_description: "Placeholder functional QA skill for marketplace smoke testing."
+  default_prompt: "Use $qa-test-case-smoke to draft a tiny functional test smoke checklist."
+policy:
+  allow_implicit_invocation: true

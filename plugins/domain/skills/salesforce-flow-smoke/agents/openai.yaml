@@ -1,0 +1,6 @@
+interface:
+  display_name: "Salesforce Flow Smoke"
+  short_description: "Placeholder domain testing skill for marketplace smoke testing."
+  default_prompt: "Use $salesforce-flow-smoke to outline a simple Salesforce flow smoke check."
+policy:
+  allow_implicit_invocation: true

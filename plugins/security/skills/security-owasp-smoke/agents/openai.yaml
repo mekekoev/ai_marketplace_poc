@@ -1,0 +1,6 @@
+interface:
+  display_name: "Security OWASP Smoke"
+  short_description: "Placeholder security testing skill for marketplace smoke testing."
+  default_prompt: "Use $security-owasp-smoke to draft a tiny OWASP smoke checklist."
+policy:
+  allow_implicit_invocation: true

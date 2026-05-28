@@ -23,6 +23,118 @@
         "code-review",
         "productivity"
       ]
+    },
+    {
+      "name": "common",
+      "description": "Shared common Quality Engineering skills packaged with a marketplace smoke-test agent.",
+      "version": "0.1.0",
+      "source": "./plugins/common",
+      "author": {
+        "name": "QE Practice VS"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "common",
+        "qe",
+        "marketplace"
+      ]
+    },
+    {
+      "name": "qa",
+      "description": "Functional testing and data quality placeholders for marketplace import validation.",
+      "version": "0.1.0",
+      "source": "./plugins/qa",
+      "author": {
+        "name": "QE Practice VS"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "qa",
+        "functional-testing",
+        "data-quality"
+      ]
+    },
+    {
+      "name": "aqa",
+      "description": "Automated testing placeholders for Playwright and API marketplace import validation.",
+      "version": "0.1.0",
+      "source": "./plugins/aqa",
+      "author": {
+        "name": "QE Practice VS"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "aqa",
+        "automation",
+        "playwright"
+      ]
+    },
+    {
+      "name": "perf",
+      "description": "Performance testing placeholders for k6 and baseline marketplace import validation.",
+      "version": "0.1.0",
+      "source": "./plugins/perf",
+      "author": {
+        "name": "QE Practice VS"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "performance",
+        "k6",
+        "baseline"
+      ]
+    },
+    {
+      "name": "security",
+      "description": "Security testing placeholders for OWASP and threat-model marketplace import validation.",
+      "version": "0.1.0",
+      "source": "./plugins/security",
+      "author": {
+        "name": "QE Practice VS"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "security",
+        "owasp",
+        "threat-modeling"
+      ]
+    },
+    {
+      "name": "a11y",
+      "description": "Accessibility placeholders for WCAG and keyboard-flow marketplace import validation.",
+      "version": "0.1.0",
+      "source": "./plugins/a11y",
+      "author": {
+        "name": "QE Practice VS"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "accessibility",
+        "a11y",
+        "wcag"
+      ]
+    },
+    {
+      "name": "domain",
+      "description": "Platform-specific domain testing placeholders for SAP and Salesforce marketplace validation.",
+      "version": "0.1.0",
+      "source": "./plugins/domain",
+      "author": {
+        "name": "QE Practice VS"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "domain",
+        "sap",
+        "salesforce"
+      ]
     }
   ]
 }

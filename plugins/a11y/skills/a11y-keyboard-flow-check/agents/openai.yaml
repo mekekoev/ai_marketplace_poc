@@ -1,0 +1,6 @@
+interface:
+  display_name: "A11y Keyboard Flow Check"
+  short_description: "Placeholder accessibility testing skill for marketplace smoke testing."
+  default_prompt: "Use $a11y-keyboard-flow-check to outline a keyboard navigation smoke check."
+policy:
+  allow_implicit_invocation: true

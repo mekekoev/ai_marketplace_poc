@@ -1,0 +1,6 @@
+interface:
+  display_name: "SAP Test Smoke"
+  short_description: "Placeholder domain testing skill for marketplace smoke testing."
+  default_prompt: "Use $sap-test-smoke to draft a minimal SAP test smoke note."
+policy:
+  allow_implicit_invocation: true

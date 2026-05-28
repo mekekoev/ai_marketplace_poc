@@ -1,0 +1,6 @@
+interface:
+  display_name: "AQA Playwright Smoke"
+  short_description: "Placeholder automated testing skill for marketplace smoke testing."
+  default_prompt: "Use $aqa-playwright-smoke to sketch a minimal Playwright smoke test."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Security Threat Model Smoke"
+  short_description: "Placeholder security testing skill for marketplace smoke testing."
+  default_prompt: "Use $security-threat-model-smoke to outline a small threat-model smoke note."
+policy:
+  allow_implicit_invocation: true
