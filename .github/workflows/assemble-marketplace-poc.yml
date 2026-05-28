@@ -1,0 +1,45 @@
+name: Assemble marketplace PoC
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily at 06:00 UTC / 09:00 Europe/Minsk.
+    - cron: "0 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Export skills registry branch
+        run: |
+          git fetch origin skills_registry
+          mkdir -p /tmp/skills_registry
+          git archive origin/skills_registry | tar -x -C /tmp/skills_registry
+
+      - name: Assemble marketplace
+        run: |
+          python scripts/assemble_marketplace_poc.py \
+            --registry /tmp/skills_registry \
+            --output .
+
+      - name: Commit generated marketplace
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .agents .claude-plugin plugins
+          if git diff --cached --quiet; then
+            echo "No generated marketplace changes."
+          else
+            git commit -m "Assemble marketplace from skills_registry"
+            git push origin main
+          fi
