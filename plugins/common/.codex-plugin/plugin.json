@@ -1,7 +1,7 @@
 {
   "name": "common",
   "version": "0.1.0",
-  "description": "Shared common Quality Engineering skills packaged with a marketplace smoke-test agent.",
+  "description": "Common QE plugin assembled from skills_registry with 3 skills and 1 agents.",
   "author": {
     "name": "QE Practice VS"
   },
@@ -14,17 +14,16 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Common QE",
-    "shortDescription": "Shared QE skills and smoke agents.",
-    "longDescription": "Shared common Quality Engineering skills packaged with a marketplace smoke-test agent.",
+    "shortDescription": "3 skills and 1 agents from the common registry.",
+    "longDescription": "Common QE plugin assembled from skills_registry with 3 skills and 1 agents.",
     "developerName": "QE Practice VS",
     "category": "Productivity",
     "capabilities": [
       "Write"
     ],
     "defaultPrompt": [
-      "Use Common QE to smoke test shared QE skills.",
-      "Evaluate an agent with the common tools."
-    ],
-    "brandColor": "#2563EB"
+      "Use Common QE to help with a common task.",
+      "Use $common-agent-evaluator from Common QE."
+    ]
   }
 }

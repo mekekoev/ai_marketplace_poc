@@ -17,22 +17,10 @@
       "category": "Productivity"
     },
     {
-      "name": "common",
+      "name": "a11y",
       "source": {
         "source": "local",
-        "path": "./plugins/common"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
-    },
-    {
-      "name": "qa",
-      "source": {
-        "source": "local",
-        "path": "./plugins/qa"
+        "path": "./plugins/a11y"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -53,34 +41,10 @@
       "category": "Productivity"
     },
     {
-      "name": "perf",
+      "name": "common",
       "source": {
         "source": "local",
-        "path": "./plugins/perf"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
-    },
-    {
-      "name": "security",
-      "source": {
-        "source": "local",
-        "path": "./plugins/security"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
-    },
-    {
-      "name": "a11y",
-      "source": {
-        "source": "local",
-        "path": "./plugins/a11y"
+        "path": "./plugins/common"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -93,6 +57,42 @@
       "source": {
         "source": "local",
         "path": "./plugins/domain"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "perf",
+      "source": {
+        "source": "local",
+        "path": "./plugins/perf"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "qa",
+      "source": {
+        "source": "local",
+        "path": "./plugins/qa"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "security",
+      "source": {
+        "source": "local",
+        "path": "./plugins/security"
       },
       "policy": {
         "installation": "AVAILABLE",

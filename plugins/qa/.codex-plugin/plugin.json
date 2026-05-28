@@ -1,30 +1,29 @@
 {
   "name": "qa",
   "version": "0.1.0",
-  "description": "Functional testing and data quality placeholders for marketplace import validation.",
+  "description": "Functional QA plugin assembled from skills_registry with 2 skills and 1 agents.",
   "author": {
     "name": "QE Practice VS"
   },
   "license": "MIT",
   "keywords": [
     "qa",
-    "functional-testing",
-    "data-quality"
+    "qe",
+    "marketplace"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Functional QA",
-    "shortDescription": "Functional testing smoke skills.",
-    "longDescription": "Functional testing and data quality placeholders for marketplace import validation.",
+    "shortDescription": "2 skills and 1 agents from the qa registry.",
+    "longDescription": "Functional QA plugin assembled from skills_registry with 2 skills and 1 agents.",
     "developerName": "QE Practice VS",
     "category": "Productivity",
     "capabilities": [
       "Write"
     ],
     "defaultPrompt": [
-      "Use Functional QA to draft a smoke checklist.",
-      "Create a data quality smoke check."
-    ],
-    "brandColor": "#0F766E"
+      "Use Functional QA to help with a qa task.",
+      "Use $qa-data-quality-smoke from Functional QA."
+    ]
   }
 }
