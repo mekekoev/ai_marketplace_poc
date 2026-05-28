@@ -10,11 +10,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Render a placeholder skill summary.")
     parser.add_argument("--name", default="placeholder skill", help="Skill name to include in the summary.")
     args = parser.parse_args()
-    print(f"# {args.name}
-
-- Marketplace import: ok
-- Placeholder scripts: available
-- Next step: replace with production guidance")
+    lines = [
+        f"# {args.name}",
+        "",
+        "- Marketplace import: ok",
+        "- Placeholder scripts: available",
+        "- Next step: replace with production guidance",
+    ]
+    print("\n".join(lines))
 
 
 if __name__ == "__main__":
